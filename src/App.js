@@ -1,12 +1,10 @@
+import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 import ThumbsUpButton from "./components/thumbs/ThumbsUpButton";
 
-function App() {
+export default function App() {
   return (
     <>
-      <p>TEST</p>
-      <ThumbsUpButton />
+      <ThumbsUpButton icon={<ThumbUpIcon />} />
     </>
   );
 }
-
-export default App;
