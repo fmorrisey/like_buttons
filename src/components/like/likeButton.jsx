@@ -17,7 +17,7 @@ export default function LikeButton(props) {
   return (
     <div>
       <button
-        class={isLiked ? "btn btn-like active " : "btn btn-like"}
+        class={isLiked ? "btn btn-like active-heart " : "btn btn-like"}
         type="button"
         onClick={toggleLike}
       >
