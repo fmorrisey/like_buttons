@@ -9,7 +9,12 @@ export default function App() {
   return (
     <>
       <ThumbsUpButton icon={<ThumbUpIcon />} />
-      <LikeButton icon={<FavoriteIcon />}>Like</LikeButton>
+      <LikeButton
+        iconActive={<FavoriteIcon />}
+        iconDeactivate={<FavoriteBorderIcon />}
+      >
+        Like
+      </LikeButton>
     </>
   );
 }

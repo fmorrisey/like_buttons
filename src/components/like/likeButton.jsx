@@ -5,6 +5,15 @@ export default function LikeButton(props) {
   const [isLiked, setLike] = useState(false);
   const toggleLike = () => setLike(!isLiked);
 
+  function ToggleIcons(props) {
+    if (isLiked) {
+      return <>{props.iconActive}</>;
+    }
+    if (!isLiked) {
+      return <>{props.iconDeactivate}</>;
+    }
+  }
+
   return (
     <div>
       <button
@@ -12,11 +21,16 @@ export default function LikeButton(props) {
         type="button"
         onClick={toggleLike}
       >
-        <span>{props.icon}</span>
+        <span>
+          <ToggleIcons
+            iconActive={props.iconActive}
+            iconDeactivate={props.iconDeactivate}
+          />
+        </span>
         {props.children}
       </button>
       <br />
-      {/* {isLiked.toString()}! */}
+      {isLiked.toString()}!
     </div>
   );
 }
