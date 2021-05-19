@@ -1,0 +1,23 @@
+.btn {
+  display: inline-flex;
+  padding: 0 auto;
+  align-items: center;
+
+  &-like {
+    border: 1px solid White;
+    svg {
+      padding-right: 0.5rem;
+      border: none;
+    }
+  }
+}
+
+.active {
+  background-color: white;
+  border: 1px solid Red;
+  font-weight: bold;
+  color: Red;
+  svg {
+    color: red;
+  }
+}
