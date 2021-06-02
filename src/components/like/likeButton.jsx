@@ -18,7 +18,7 @@ export default function LikeButton(props) {
         {props.children}
       </button>
       <br />
-      {isLiked.toString()}!
+      {/* {isLiked.toString()}! */}
     </div>
   );
 }
